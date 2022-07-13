@@ -1,4 +1,5 @@
-from cfinal import *
+from flask import Flask, render_template, request, flash
+from cfinal import message, client, db, app
 import sys
 
 @app.route('/')
