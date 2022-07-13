@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <title>Publish message</title>
+  </head>
+  <body>
+      <form action="{{ url_for('messageadd')}}" method="post">
+          <h5>Publish message</h5>
+          <div>
+              <input type="text" name="topic" placeholder="topic">
+          </div>
+          <div>
+            <input type="text" name="text" placeholder="text">
+        </div>
+          <div>
+              <button >Publish</button>
+          </div>
+      </form>
+      <hr></hr>
+
+  </body>
+
+</html>

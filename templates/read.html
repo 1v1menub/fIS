@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <title>Search topic</title>
+  </head>
+  <body>
+      <form action="{{ url_for('searchtopic')}}" method="get">
+          <h5>Search topic</h5>
+          <div>
+              <input type="text" name="topic" placeholder="topic">
+          </div>
+          <div>
+              <button >Search</button>
+          </div>
+      </form>
+      <hr></hr>
+      {% if showmessage %}
+      <p name="showmessage" class="showmessage"><strong> {{ showmessage }} </strong>
+      {% endif %} 
+
+  </body>
+
+</html>
