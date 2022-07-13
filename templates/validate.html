@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <title>Validate user</title>
+  </head>
+  <body>
+      <form action="{{ url_for('userval')}}" method="post">
+          <h5>Enter user details for validation</h5>
+          <div>
+              <input type="text" name="username" placeholder="username">
+          </div>
+          <div>
+              <input type="text" name="password" placeholder="password">
+          </div>
+          <div>
+              <button >Validate</button>
+          </div>
+      </form>
+      <hr></hr>
+      {% if message %}
+      <p name="message" class="message"><strong> {{ message }} </strong>
+      {% endif %} 
+  </body>
+
+</html>
